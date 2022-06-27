@@ -50,8 +50,8 @@ id=-1001659048493
 # compile plox
 if [ $1 == system ]; then
 make systemimage -j$(nproc --all) #&
-#sleep 80m
-#kill %1
+sleep 80m
+kill %1
 elif [ $1 == vendor ]; then
 make vendorimage -j$(nproc --all)
 elif [ $1 == full ]; then
