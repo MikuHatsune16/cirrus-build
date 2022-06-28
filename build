@@ -55,7 +55,7 @@ make systemimage -j$(nproc --all) #&
 elif [ $1 == vendor ]; then
 make vendorimage -j$(nproc --all)
 elif [ $1 == full ]; then
-make nad -j$(nproc --all)
+m bacon -j$(nproc --all)
 fi
 
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
